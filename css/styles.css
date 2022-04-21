@@ -111,8 +111,12 @@ img {
 
     opacity: 0;
     transition: opacity var(--animation-time) var(--animation-cubic);
-
 }
+
+.link:hover::after {
+    opacity: 1;
+}
+
 .container-nav-contacts{
     display: flex;
     margin-left: auto;
