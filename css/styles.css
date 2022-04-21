@@ -19,6 +19,8 @@
     --portfolio-bgc: #E5E5E5;
     --team-bgc: #F5F4FA;
     --icons-color: #AFB1B8;
+    --animation-time: 250ms;
+    --animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 ul {
     margin: 0px;
@@ -91,14 +93,25 @@ img {
 }
 
 .container-nav-main .link {
+    position: relative;
     color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;   
 }
 
+.container-nav-main .link::after {
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    background: var(--blue-color);
+    border-radius: 2px;
+
+    opacity: 0;
+    transition: opacity var(--animation-time) var(--animation-cubic);
+
+}
 .container-nav-contacts{
     display: flex;
     margin-left: auto;
