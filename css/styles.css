@@ -103,6 +103,7 @@ img {
 
 .container-nav-main .link::after {
     position: absolute;
+    display: block;
     width: 48px;
     height: 4px;
     background: var(--blue-color);
