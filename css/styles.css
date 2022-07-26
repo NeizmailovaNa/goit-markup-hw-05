@@ -311,6 +311,8 @@ img {
     height: 70px;
     left: 0;
     bottom: 0;
+
+    background: rgba(47, 48, 58, 0.8);
 }
 
 .features-box {
