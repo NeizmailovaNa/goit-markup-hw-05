@@ -126,6 +126,7 @@ img {
     position: absolute;
     width: 48px;
     height: 4px;
+    top: 100%;
 
     color: var(--blue-color);
 }
