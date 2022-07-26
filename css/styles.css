@@ -117,6 +117,18 @@ img {
     opacity: 1;
 }
 
+.link {
+    position: relative;
+}
+
+.link::after {
+    position: absolute;
+    width: 48px;
+    height: 4px;
+
+    color: var(--blue-color);
+}
+
 .container-nav-contacts{
     display: flex;
     margin-left: auto;
