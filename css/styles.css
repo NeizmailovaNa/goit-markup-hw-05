@@ -122,7 +122,7 @@ img {
 }
 
 .link::after {
-    content: ;
+    content: "";
     position: absolute;
     width: 48px;
     height: 4px;
