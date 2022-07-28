@@ -114,7 +114,7 @@ img {
 }
 
 .link:hover::after {
-    opacity: 1;
+    opacity: 0;
 }
 
 .link {
@@ -133,11 +133,7 @@ img {
     background-color: var(--blue-color);
 
     opacity: 1;
-}
-
-.link::after:hover {
-    opacity: 0;
-
+    transition: opacity var(--animation-time) var(--animation-cubic);
 }
 
 .container-nav-contacts{
