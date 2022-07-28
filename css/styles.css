@@ -113,6 +113,10 @@ img {
     transition: opacity var(--animation-time) var(--animation-cubic);
 }
 
+.link:hover::after {
+    opacity: 1;
+}
+
 .link {
     position: relative;
 }
@@ -131,7 +135,7 @@ img {
     opacity: 1;
 }
 
-.link:hover::after {
+.link::after:hover {
     opacity: 0;
 }
 
@@ -305,9 +309,7 @@ img {
     width: 100%;
     height: 70px;
     left: 0;
-    bottom: 0;
-
-    background: rgba(47, 48, 58, 0.8);
+    bottom: ;
 }
 
 .features-box {
