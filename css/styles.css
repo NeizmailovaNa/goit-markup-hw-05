@@ -113,10 +113,6 @@ img {
     transition: opacity var(--animation-time) var(--animation-cubic);
 }
 
-.link:hover::after {
-    opacity: 0;
-}
-
 .link {
     position: relative;
 }
@@ -133,7 +129,10 @@ img {
     background-color: var(--blue-color);
 
     opacity: 1;
-    transition: opacity var(--animation-time) var(--animation-cubic);
+}
+
+.link::after:hover {
+    opacity: 0;
 }
 
 .container-nav-contacts{
