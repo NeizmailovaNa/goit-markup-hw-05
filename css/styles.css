@@ -131,7 +131,7 @@ img {
     opacity: 1;
 }
 
-.link::after:hover {
+.link:hover::after {
     opacity: 0;
 }
 
