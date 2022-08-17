@@ -817,22 +817,23 @@ img {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.backdrop.is-hiden.modal {
+.backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
     position: absolute;
+    display: flex;
     top: 8px;
     right: 8px;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-   opacity: 0;
+    background-color: var(--white-color);
 }
-/*
-.is-hiden {
+
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -840,4 +841,9 @@ img {
  
 .no-scroll {
     overflow: hidden;
+}
+
+.modal-svg {
+    right: 8px;
+    width: 30px;
 }
