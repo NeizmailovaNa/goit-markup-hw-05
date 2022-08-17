@@ -813,7 +813,12 @@ img {
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.backdrop.is-hiden.modal {
+    transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
@@ -824,9 +829,9 @@ img {
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: var(--white-color);
+   opacity: 0;
 }
-
+/*
 .is-hiden {
     opacity: 0;
     visibility: hidden;
