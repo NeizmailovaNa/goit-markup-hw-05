@@ -826,8 +826,12 @@ img {
     background-color: var(--white-color);
 }
 
-.modal-svg {
-    width: 30px;
-    height: 30px;
+.is-hiden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
  
+.no-scroll {
+    overflow: hidden;
+}
