@@ -101,11 +101,11 @@ img {
     letter-spacing: 0.02em;   
 }
 
-.link .current {
+.current {
     position: relative;
 }
 
-.link .current::after{
+.current::after{
     content: "";
     position: absolute;
     display: block;
@@ -114,9 +114,7 @@ img {
     background: var(--blue-color);
     border-radius: 2px;
 
-    opacity: 1;
     transform: translateY(28px);
-    transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
 
