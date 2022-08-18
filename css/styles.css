@@ -101,6 +101,26 @@ img {
     letter-spacing: 0.02em;   
 }
 
+.link .current {
+    position: relative;
+}
+
+.link .current::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--blue-color);
+    border-radius: 2px;
+
+    opacity: 1;
+    transform: translateY(28px);
+    transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
+}
+
+
+/*
 .container-nav-main .link::after {
     content: "";
     position: absolute;
@@ -111,36 +131,14 @@ img {
     border-radius: 2px;
 
     opacity: 0;
+    transform: translateY(28px);
     transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
 .link:hover::after {
     opacity: 1;
 }
-
-.link {
-    position: relative;
-}
-
-.link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--blue-color);
-
-    opacity: 1;
-    transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
-}
-
-.link::after:hover {
-    opacity: 0;
-}
-
+*/
 .container-nav-contacts{
     display: flex;
     margin-left: auto;
@@ -811,9 +809,8 @@ img {
     width: 100%;
     height: 100%;
 
-    background: rgba(0, 0, 0, 0.2);
-    
-    transition: opacity var(--animation-time) var(--animation-cubic) visibility var(--animation-time);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
 .modal{
@@ -827,7 +824,6 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--animation-time) var(--animation-cubic) visibility var(--animation-time);
 }
 
 .backdrop.is-hidden.modal {
